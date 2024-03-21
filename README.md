@@ -30,7 +30,7 @@ Before setting up localhost:8000, you should set up pathway to the executable ph
 
 Basically, to set up your localhost:8000, type `php -S localhost:8000`.
 
-PHP Coding Section
+PHP Coding Lessons
 ---
 
 **PHP Tags / Printing / Comments**
