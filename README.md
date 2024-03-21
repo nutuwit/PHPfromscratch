@@ -30,10 +30,17 @@ Before setting up localhost:8000, you should set up pathway to the executable ph
 
 Basically, to set up your localhost:8000, type `php -S localhost:8000`.
 
-PHP Coding Lessons
+PHP Coding Lessons 101
 ---
 
 **PHP Tags / Printing / Comments**
+
+Tricks
+1. Instead of using echo or print, you can use <?= 'Your Text' ?>
+2. 'echo' can be used to make a list of things; however, 'print' cannot do so.
+3. '<br>' is used to separate the new line.
+4. don't forget to put ; at the end of each line.
+   
 ```
 <?php
 // This is a single-line comment
@@ -77,3 +84,54 @@ echo '<br>';
 
 </html>
 ```
+
+**Variables**
+Containers that hold data that you can later use to access that data or value. Variables can hold different types of data (strings, integers, boolean, etc.).
+
+$name = 'Brad'
+Rules 
+  1. Prefixed with a dollar sign ($)
+  2. Start with a letter or an underscore / not with a number 
+  3. Can only contain letters, numbers, and underscores.
+  4. Case sensitive
+
+Variables Naming Convention
+  1) Underscore: $server_name => 
+  2) Camel Case: $ => Custom variable
+  3) Pascal Case: $ServerName => classes
+  4) Lowercase: $servername => database parameters variable
+
+```
+<?php
+$title = 'PHP From Scratch';
+$heading = 'Welcome to the course';
+$body = 'In this course, you will learn the fundamentals of the PHP language';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title><?= $title ?></title>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-semibold"><?= $title ?></h1>
+        </div>
+    </header>
+    <div class="container mx-auto p-4 mt-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold mb-4"><?= $heading ?></h2>
+            <p><?= $body ?></p>
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
