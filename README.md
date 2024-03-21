@@ -10,4 +10,20 @@ Server-side code is executed on the server. It is not accessible from the browse
 - Authentication: log-in & register functionality
 - Sessions
 
-  
+** Laragon is used to solve the flexibility weakness => install the full version of Laragon 
+
+  [Download here: Laragon](https://laragon.org/)
+
+To enable the local hosting, 
+  1. Click "Start All"
+  2. Click "Web" to display your localhost and view it
+  3. Database can integrate MySQL and other database platforms
+  4. Terminal => type command 'ls' to check the lists of file of your core server e.g. www
+
+We can also embed HTML codes into PHP files.
+
+In order to publish your localhost/file-name or file-name.test (make sure to use the right suffix the program or you set it up.) 
+
+Before setting up localhost:8000, you should set up pathway to the executable php. In other words, if you use VSCode, go to "Preference" > "Settings" > search "PHP" > find "executable path.json" > look it up "bin" folder > copy file path and add "\\php.exe" > restart your VSCode to have the effects felt 
+
+Basically, to set up your localhost:8000, type `php -S localhost:8000`.
