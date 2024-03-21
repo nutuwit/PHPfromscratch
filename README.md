@@ -34,7 +34,7 @@ PHP Coding Section
 ---
 
 **PHP Tags / Printing / Comments**
-	```
+```
 <?php
 // This is a single-line comment
 echo 'This is an echo statement';
