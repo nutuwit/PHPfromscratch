@@ -135,3 +135,4 @@ $body = 'In this course, you will learn the fundamentals of the PHP language';
 </html>
 ```
 
+Types
